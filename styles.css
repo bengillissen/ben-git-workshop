@@ -4,5 +4,37 @@ h1 {
 }
 
 p {
-    color: darkolivegreen;
+    color: forestgreen;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1.2fr 0.8fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 1px 1px;
+    grid-template-areas:
+    "a a a a"
+    "b c c c"
+    "b c c c"
+    "d d d d";
+}
+.a {
+    grid-area: a;
+    background-color: hsl(103, 100%, 11%)
+}
+
+.b {
+    grid-area: b;
+    background-color: hsl(164, 93%, 77%)
+}
+
+.c {
+    grid-area: c;
+    background-color: hsl(164, 93%, 42%)
+}
+
+
+.d {
+    grid-area: d;
+    background-color: hsl(103, 100%, 11%)
 }
